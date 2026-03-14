@@ -1,0 +1,180 @@
+1. Estrutura geral
+
+A identidade visual é composta por três elementos principais centralizados verticalmente:
+
+1️⃣ Símbolo geométrico dourado (acima)
+2️⃣ Nome da empresa em tipografia serifada elegante (centro)
+3️⃣ Subtítulo institucional em tipografia minimalista (abaixo)
+
+Tudo está perfeitamente alinhado ao centro da página.
+
+2. Símbolo da marca
+
+O símbolo é um cubo geométrico minimalista em perspectiva isométrica.
+
+Características:
+
+• formado por linhas finas douradas
+• estrutura wireframe (apenas contorno)
+• aparência tridimensional
+• geometria perfeita
+• simetria absoluta
+
+Estrutura visual
+
+O cubo é composto por:
+
+um hexágono externo que sugere profundidade
+
+três faces visíveis
+
+linhas internas que criam a sensação de um cubo dentro de outro
+
+Visualmente ele lembra:
+
+arquitetura
+
+matemática
+
+modelos quantitativos
+
+estrutura de capital
+
+estabilidade
+
+Espessura das linhas
+
+Linhas:
+
+finas e elegantes
+
+aproximadamente 1.5px a 2px no design.
+
+3. Cor do símbolo
+
+O cubo usa um dourado sofisticado.
+
+Cor aproximada:
+
+HEX: #C6A75C
+
+Esse dourado não é brilhante nem metálico exagerado.
+
+É um dourado:
+
+• institucional
+• discreto
+• sofisticado
+• semelhante a private banks
+
+4. Nome da empresa
+
+Texto:
+
+AETERNUM AURUM PARTNERS
+
+Características tipográficas:
+
+• fonte serifada clássica
+• todas as letras maiúsculas
+• espaçamento entre letras amplo (tracking alto)
+
+Fontes semelhantes:
+
+Trajan Pro
+
+Playfair Display
+
+Cormorant
+
+Garamond moderno
+
+Cor do texto
+
+Branco suave:
+
+HEX aproximado
+
+#EAEAEA
+
+5. Subtítulo institucional
+
+Texto abaixo do nome:
+
+PLATAFORMA PRIVADA DE INTELIGÊNCIA DE CAPITAL
+
+Características:
+
+• fonte sans-serif moderna
+• menor que o título
+• espaçamento entre letras médio
+• aparência tecnológica mas discreta
+
+Fontes semelhantes:
+
+Inter
+
+Helvetica
+
+Neue Haas
+
+Open Sans
+
+Cor:
+
+cinza claro
+
+HEX aproximado
+
+#8A8A8A
+
+6. Fundo da logo
+
+O fundo é preto profundo com textura sutil.
+
+HEX aproximado:
+
+#0B0B0B
+
+O fundo possui um leve gradiente radial, criando a sensação de:
+
+profundidade
+
+luxo
+
+iluminação suave atrás do símbolo
+
+7. Elemento inferior
+
+Abaixo do subtítulo existe:
+
+• uma linha horizontal fina dourada
+
+E abaixo da linha aparece:
+
+GLOBAL MACRO | EVENT-DRIVEN | QUANTITATIVE RISK
+
+Tipografia:
+
+• sans-serif
+• capitalizada
+• espaçamento elegante
+
+8. Sensação visual da marca
+
+A marca transmite:
+
+• hedge fund institucional
+• matemática
+• engenharia financeira
+• estabilidade
+• sofisticação
+• capital global
+
+Ela lembra visualmente:
+
+Renaissance Technologies
+
+Goldman Sachs apresentações
+
+fundos quantitativos
