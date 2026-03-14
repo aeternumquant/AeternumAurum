@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { NavLink } from "react-router-dom";
 import { WireframeCube } from "@/components/WireframeCube";
 
 export default function Hero() {
@@ -40,20 +39,6 @@ export default function Hero() {
             <span>Quantitative Risk</span>
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center gap-3 mt-12">
-            <NavLink
-              to="/acesso"
-              className="px-8 py-3 bg-primary text-background text-[10px] tracking-[0.25em] uppercase font-sans hover:bg-primary/85 transition-all duration-300 min-w-[180px] text-center"
-            >
-              Solicitar Acesso
-            </NavLink>
-            <NavLink
-              to="/login"
-              className="px-8 py-3 border border-white/15 text-muted-foreground text-[10px] tracking-[0.25em] uppercase font-sans hover:border-white/30 hover:text-foreground transition-all duration-300 min-w-[180px] text-center"
-            >
-              Login
-            </NavLink>
-          </div>
         </motion.div>
       </div>
 
