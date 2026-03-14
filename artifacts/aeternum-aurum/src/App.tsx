@@ -1,40 +1,30 @@
-import { Switch, Route, Router as WouterRouter } from "wouter";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
-
-import Home from "@/pages/home";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "@/components/Header";
+import Home from "@/pages/Home";
+import FrameworkPage from "@/pages/Framework";
+import AlocacoesPage from "@/pages/Alocacoes";
+import ResearchPage from "@/pages/Research";
+import CommoditiesPage from "@/pages/Commodities";
+import AcessoPage from "@/pages/Acesso";
+import ReportsPage from "@/pages/Reports";
 import NotFound from "@/pages/not-found";
 
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchOnWindowFocus: false,
-      retry: false,
-    },
-  },
-});
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-function Router() {
+export default function App() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
+    <BrowserRouter basename={base}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/framework" element={<FrameworkPage />} />
+        <Route path="/alocacoes" element={<AlocacoesPage />} />
+        <Route path="/research" element={<ResearchPage />} />
+        <Route path="/commodities" element={<CommoditiesPage />} />
+        <Route path="/acesso" element={<AcessoPage />} />
+        <Route path="/reports" element={<ReportsPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
-          <Router />
-        </WouterRouter>
-        <Toaster />
-      </TooltipProvider>
-    </QueryClientProvider>
-  );
-}
-
-export default App;
