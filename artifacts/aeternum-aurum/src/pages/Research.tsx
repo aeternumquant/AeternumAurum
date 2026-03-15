@@ -3,10 +3,10 @@ import { FadeIn } from "@/components/FadeIn";
 import { NavLink } from "react-router-dom";
 
 const papers = [
-  { date: "Mar 2024", tag: "Macro", title: "Ciclos de Liquidez Global e Implicações para Mercados Emergentes", desc: "Análise dos principais determinantes de liquidez global e seu impacto nos fluxos de capital para economias emergentes em 2024–2025." },
-  { date: "Fev 2024", tag: "Quantitative", title: "Modelos de Volatilidade Implícita em Commodities Agrícolas", desc: "Estudo sobre superfície de volatilidade em opções de soja e milho, com foco em arbitragem de estrutura temporal." },
-  { date: "Jan 2024", tag: "Event-Driven", title: "M&A Cross-Border em Setores Regulados: Oportunidades e Riscos", desc: "Levantamento de 48 transações em setores regulados nos últimos 5 anos e sua correlação com retornos anormais." },
-  { date: "Dez 2023", tag: "Risk", title: "Tail Risk Hedging em Carteiras Multi-Ativo", desc: "Estruturas de proteção eficientes para cenários de cauda: comparativo de abordagens com opções, volatilidade e metais." },
+  { date: "Mar 2026", tag: "Macro", title: "Ciclos de Liquidez Global e Implicações para Mercados Emergentes", desc: "Análise dos principais determinantes de liquidez global e seu impacto nos fluxos de capital para economias emergentes em 2024–2025." },
+  { date: "Fev 2026", tag: "Quantitative", title: "Modelos de Volatilidade Implícita em Commodities Agrícolas", desc: "Estudo sobre superfície de volatilidade em opções de soja e milho, com foco em arbitragem de estrutura temporal." },
+  { date: "Jan 2026", tag: "Event-Driven", title: "M&A Cross-Border em Setores Regulados: Oportunidades e Riscos", desc: "Levantamento de 48 transações em setores regulados nos últimos 5 anos e sua correlação com retornos anormais." },
+  { date: "Dez 2025", tag: "Risk", title: "Tail Risk Hedging em Carteiras Multi-Ativo", desc: "Estruturas de proteção eficientes para cenários de cauda: comparativo de abordagens com opções, volatilidade e metais." },
 ];
 
 const tagColor: Record<string, string> = {
