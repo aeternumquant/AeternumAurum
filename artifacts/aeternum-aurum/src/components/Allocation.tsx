@@ -2,10 +2,10 @@ import { FadeIn } from "@/components/FadeIn";
 
 const allocations = [
   { label: "Commodities & Real Assets", pct: 35, note: "Agro, energia, metais preciosos e índices globais" },
-  { label: "Equities Long/Short", pct: 25, note: "Mercados desenvolvidos e emergentes" },
+  { label: "Global Macro", pct: 25, note: "Câmbio, macro ciclos e soberanos globais" },
   { label: "Volatilidade & Derivativos", pct: 20, note: "Proteção e geração de alfa" },
   { label: "ISO 20022 Assets", pct: 12, note: "Ativos tokenizados e protocolos digitais" },
-  { label: "Equities Táticas", pct: 8, note: "Posições direcionais em mercados emergentes" },
+  { label: "Equities Long/Short", pct: 8, note: "Mercados desenvolvidos e emergentes" },
 ];
 
 export default function Allocation() {
