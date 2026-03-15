@@ -79,7 +79,7 @@ export default function GovernancaEstrategica() {
                 whileHover={{ backgroundColor: "rgba(255,255,255,0.015)" }}
                 className="px-6 py-5 first:pl-0 last:pr-0 transition-colors duration-300"
               >
-                <div className="font-display text-4xl text-primary mb-1 leading-none">{item.valor}</div>
+                <div className="font-display text-4xl text-primary mb-1 leading-none text-center">{item.valor}</div>
                 <div className="text-[9px] text-muted-foreground/50 tracking-widest uppercase mb-3">{item.titulo}</div>
                 <p className="text-muted-foreground text-xs font-light leading-relaxed">{item.desc}</p>
               </motion.div>
