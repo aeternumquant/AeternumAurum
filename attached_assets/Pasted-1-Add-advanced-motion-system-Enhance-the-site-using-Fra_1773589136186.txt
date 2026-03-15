@@ -1,0 +1,162 @@
+1 — Add advanced motion system
+
+Enhance the site using Framer Motion to create smoother and more sophisticated animations.
+
+Add:
+
+• smooth scroll-based reveal animations
+• subtle fade + upward motion when elements enter viewport
+• soft hover elevation on cards
+• micro-interactions on buttons
+
+Animations should be slow, elegant and institutional, not flashy.
+
+Example behavior:
+
+Cards should slightly lift and glow when hovered.
+
+Buttons should have subtle scale and gold glow.
+
+2 — Add scroll-based parallax
+
+Add subtle scroll depth movement to selected elements:
+
+• hero background
+• section titles
+• geometric visuals
+
+Use useScroll and useTransform.
+
+Example behavior:
+
+As the user scrolls:
+
+• background glow moves slightly slower than foreground
+• titles shift subtly in vertical space
+• geometric visuals feel layered
+
+This creates a multi-layer depth effect.
+
+3 — Enhance the 3D hero object
+
+The current geometric cube / tesseract visual should be upgraded to feel more alive.
+
+Enhance it with:
+
+• slow continuous rotation
+• subtle floating movement
+• slight mouse interaction (object tilts based on cursor position)
+• soft gold glow pulse
+
+The object should feel like a living mathematical structure.
+
+Do NOT make the animation fast.
+
+Movement must feel:
+
+• calm
+• intelligent
+• precise
+
+4 — Add ambient background systems
+
+Enhance the background atmosphere without changing colors.
+
+Add:
+
+• subtle animated noise texture
+• extremely faint moving grid pattern
+• ambient gold glow that slowly shifts
+
+These should be barely noticeable but add depth.
+
+The site should feel like a living environment, not a static page.
+
+5 — Add cursor interaction
+
+Add a minimal custom cursor effect.
+
+When hovering:
+
+Cards → cursor slightly enlarges
+Buttons → subtle gold highlight
+Interactive elements → small glow ring
+
+The cursor should feel precise and premium.
+
+6 — Add subtle light interaction
+
+Introduce soft lighting reactions when hovering key components.
+
+Examples:
+
+• cards gain a soft gold edge highlight
+• pyramid layers glow slightly
+• framework blocks illuminate gently
+
+This should simulate light reflecting on metallic surfaces.
+
+7 — Improve scrolling experience
+
+Implement smooth scrolling behavior across the site.
+
+Scrolling should feel:
+
+• fluid
+• slightly eased
+• cinematic
+
+Use a smooth scroll library if necessary (like Lenis).
+
+8 — Add section transitions
+
+When scrolling between sections:
+
+Add subtle transition moments:
+
+• faint gold divider animations
+• gentle fade between sections
+• micro parallax shift
+
+Avoid anything that feels like a page change.
+
+Everything should remain continuous.
+
+9 — Add subtle data-driven feeling
+
+Where appropriate (framework cards, allocation pyramid, market intelligence), add small animated details such as:
+
+• thin animated lines
+• subtle graph pulses
+• tiny moving data indicators
+
+This should suggest live intelligence infrastructure.
+
+Do not add charts or dashboards yet — only hints of data motion.
+
+10 — Performance optimization
+
+All animations must remain lightweight and optimized.
+
+Ensure:
+
+• smooth performance
+• minimal GPU load
+• responsive behavior across devices
+
+Animations should automatically reduce intensity on mobile.
+
+Overall goal
+
+The site should feel like a living institutional platform, not a static website.
+
+Visitors should experience:
+
+• depth
+• intelligence
+• precision
+• technological sophistication
+
+But the original design, layout and visual identity must remain unchanged.
+
+Only add motion, atmosphere and subtle interaction layers.
