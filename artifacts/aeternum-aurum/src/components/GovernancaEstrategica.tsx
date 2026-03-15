@@ -51,7 +51,6 @@ export default function GovernancaEstrategica() {
           backgroundSize: "28px 28px",
         }}
       />
-
       {/* Header */}
       <div className="relative z-10 px-8 pt-10 pb-8 border-b border-white/5">
         <FadeIn>
@@ -67,13 +66,10 @@ export default function GovernancaEstrategica() {
           </p>
         </FadeIn>
       </div>
-
       {/* The 18-Month Target */}
       <div className="relative z-10 px-8 pt-10 pb-8 border-b border-white/5">
         <FadeIn delay={0.1}>
-          <p className="text-[10px] text-muted-foreground/40 tracking-[0.3em] uppercase mb-8">
-            O Alvo de 18 Meses — A Chave
-          </p>
+          <p className="text-[10px] text-muted-foreground/40 tracking-[0.3em] uppercase mb-8">O Alvo de 18 Meses </p>
         </FadeIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-white/5">
@@ -97,7 +93,6 @@ export default function GovernancaEstrategica() {
           </p>
         </FadeIn>
       </div>
-
       {/* The Execution Engine */}
       <div className="relative z-10 px-8 py-10">
         <FadeIn delay={0.2}>
