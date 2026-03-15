@@ -5,35 +5,35 @@ import { WireframeCube } from "@/components/WireframeCube";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "Home", to: "/" },
+  { label: "Início", to: "/" },
   { label: "Framework", to: "/framework" },
   { label: "Alocações", to: "/alocacoes" },
-  { label: "Research", to: "/research" },
+  { label: "Pesquisa", to: "/research" },
   { label: "Commodities", to: "/commodities" },
   { label: "Tecnologia", to: "/tecnologia" },
   { label: "Execução", to: "/execucao" },
-  { label: "Reports", to: "/reports" },
+  { label: "Relatórios", to: "/reports" },
 ];
 
 export default function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuAberto, setMenuAberto] = useState(false);
   const location = useLocation();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-background/90 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-4">
 
-        {/* Left: hamburger + logo */}
+        {/* Esquerda: hamburguer + logo */}
         <div className="flex items-center gap-3">
           <button
             className="text-muted-foreground hover:text-foreground transition-colors p-1"
-            onClick={() => setMenuOpen((v) => !v)}
-            aria-label="Toggle menu"
+            onClick={() => setMenuAberto((v) => !v)}
+            aria-label="Abrir menu"
           >
-            {menuOpen ? <X size={18} /> : <Menu size={18} />}
+            {menuAberto ? <X size={18} /> : <Menu size={18} />}
           </button>
 
-          <NavLink to="/" className="flex items-center gap-2.5 group" onClick={() => setMenuOpen(false)}>
+          <NavLink to="/" className="flex items-center gap-2.5 group" onClick={() => setMenuAberto(false)}>
             <WireframeCube className="w-6 h-6" animate={false} />
             <span className="font-display text-[11px] tracking-[0.22em] uppercase text-foreground/60 group-hover:text-foreground/90 transition-colors hidden sm:block">
               Aeternum Aurum
@@ -41,7 +41,7 @@ export default function Header() {
           </NavLink>
         </div>
 
-        {/* Right: CTA buttons */}
+        {/* Direita: botões */}
         <div className="flex items-center gap-2">
           <NavLink
             to="/acesso"
@@ -58,9 +58,9 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Dropdown nav menu */}
+      {/* Menu dropdown */}
       <AnimatePresence>
-        {menuOpen && (
+        {menuAberto && (
           <motion.div
             initial={{ opacity: 0, y: -6 }}
             animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export default function Header() {
           >
             <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-0.5">
               {NAV_LINKS.map((link) => {
-                const isActive =
+                const ativo =
                   link.to === "/"
                     ? location.pathname === "/"
                     : location.pathname.startsWith(link.to);
@@ -78,9 +78,9 @@ export default function Header() {
                   <NavLink
                     key={link.to}
                     to={link.to}
-                    onClick={() => setMenuOpen(false)}
+                    onClick={() => setMenuAberto(false)}
                     className={`py-2.5 px-3 text-[10px] tracking-[0.2em] uppercase font-sans border-l transition-colors ${
-                      isActive
+                      ativo
                         ? "border-primary text-primary"
                         : "border-transparent text-muted-foreground hover:text-foreground hover:border-white/20"
                     }`}
@@ -92,7 +92,7 @@ export default function Header() {
               <div className="pt-3 mt-2 border-t border-white/5 sm:hidden">
                 <NavLink
                   to="/acesso"
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => setMenuAberto(false)}
                   className="block py-2.5 px-3 text-[10px] tracking-[0.2em] uppercase font-sans text-primary border-l border-primary/40"
                 >
                   Solicitar Acesso
