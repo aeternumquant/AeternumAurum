@@ -5,7 +5,7 @@ const allocations = [
   { label: "Equities Long/Short", pct: 25, note: "Mercados desenvolvidos e emergentes" },
   { label: "Volatilidade & Derivativos", pct: 20, note: "Proteção e geração de alfa" },
   { label: "ISO 20022 Assets", pct: 12, note: "Ativos tokenizados e protocolos digitais" },
-  { label: "Global Macro", pct: 8, note: "Câmbio, macro ciclos e soberanos globais" },
+  { label: "Equities Táticas", pct: 8, note: "Posições direcionais em mercados emergentes" },
 ];
 
 export default function Allocation() {
