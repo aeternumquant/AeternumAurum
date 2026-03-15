@@ -81,7 +81,7 @@ export default function GovernancaEstrategica() {
               >
                 <div className="font-display text-4xl text-primary mb-1 leading-none text-center">{item.valor}</div>
                 <div className="text-[9px] text-muted-foreground/50 tracking-widest uppercase mb-3">{item.titulo}</div>
-                <p className="text-muted-foreground text-xs font-light leading-relaxed">{item.desc}</p>
+                <p className="text-muted-foreground font-light text-center text-[11px]">{item.desc}</p>
               </motion.div>
             </FadeIn>
           ))}
