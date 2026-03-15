@@ -1,30 +1,6 @@
 import Footer from "@/components/Footer";
 import { FadeIn } from "@/components/FadeIn";
-import techImg from "@assets/image_1773589744061.png";
-
-const stack = [
-  {
-    layer: "01 — Analysis",
-    name: "MenthorQ",
-    location: "Miami, FL",
-    desc: "Processes 95% of global derivative flows for predictive structural analysis. Identifies Net GEX exposure and volatility surfaces across all major asset classes in real time.",
-    tag: "Quantitative Engine",
-  },
-  {
-    layer: "02 — Intelligence",
-    name: "Grok Heavy AI",
-    location: "U.S. Infrastructure",
-    desc: "Processes real-time macro-sentiment, filters market noise, and ensures ISO 20022 compliance. Continuously monitors geopolitical signals and central bank flows.",
-    tag: "AI / Signal Processing",
-  },
-  {
-    layer: "03 — Execution",
-    name: "Antigravity",
-    location: "U.S. Brokerages",
-    desc: "The execution layer connecting directly to trusted U.S. brokerages for instant, automated hedging. Sub-millisecond order routing with full audit trail and regulatory compliance.",
-    tag: "Automated Execution",
-  },
-];
+import TechStackVisualization from "@/components/TechStackVisualization";
 
 const zones = [
   { city: "Rio Verde", desc: "Maior polo exportador de soja e milho de Goiás" },
@@ -52,54 +28,17 @@ export default function TecnologiaPage() {
         </div>
       </section>
 
-      {/* Reference image */}
-      <section className="border-b border-white/5 bg-card/10 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <FadeIn>
-            <img
-              src={techImg}
-              alt="TRL 7+ Technology Stack and Goiás Pilot Zone"
-              className="w-full rounded-sm opacity-90 border border-white/5"
-              style={{ filter: "brightness(0.92) contrast(1.05)" }}
-            />
-          </FadeIn>
-        </div>
-      </section>
-
-      {/* Tech Stack */}
-      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-background">
+      {/* Native Tech Stack Visualization */}
+      <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-background border-b border-white/5">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
-            <h2 className="font-display text-3xl text-primary uppercase tracking-widest mb-4 text-center">
-              The TRL 7+ Technology Stack
-            </h2>
-            <p className="text-center text-muted-foreground text-xs tracking-widest uppercase mb-16">
-              Três camadas integradas — Análise · Inteligência · Execução
-            </p>
+            <TechStackVisualization />
           </FadeIn>
-
-          <div className="space-y-4">
-            {stack.map((item, i) => (
-              <FadeIn key={i} delay={i * 0.15}>
-                <div className="group flex flex-col sm:flex-row gap-6 p-7 border border-white/5 bg-card hover:bg-white/[0.018] transition-colors duration-500">
-                  <div className="shrink-0 sm:w-52">
-                    <p className="text-[10px] text-muted-foreground/50 tracking-widest uppercase mb-1">{item.layer}</p>
-                    <p className="font-display text-xl text-primary tracking-wide">{item.name}</p>
-                    <p className="text-[10px] text-muted-foreground/60 mt-1 tracking-wider">{item.location}</p>
-                  </div>
-                  <div className="flex-1 border-l border-white/5 sm:pl-6">
-                    <span className="inline-block text-[9px] tracking-widest uppercase border border-primary/20 text-primary/60 px-2 py-0.5 mb-3">{item.tag}</span>
-                    <p className="text-muted-foreground text-sm leading-relaxed font-light">{item.desc}</p>
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
         </div>
       </section>
 
       {/* Goiás Pilot Zone */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 border-t border-white/5 bg-card/15">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 border-b border-white/5 bg-card/15">
         <div className="max-w-5xl mx-auto">
           <FadeIn>
             <h2 className="font-display text-3xl text-primary uppercase tracking-widest mb-4 text-center">
