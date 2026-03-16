@@ -1,22 +1,43 @@
 import Footer from "@/components/Footer";
 import { FadeIn } from "@/components/FadeIn";
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
-const papers = [
+const allPapers = [
+  // Existentes
   { date: "Mar 2026", tag: "Macro", title: "Ciclos de Liquidez Global e Implicações para Mercados Emergentes", desc: "Análise dos principais determinantes de liquidez global e seu impacto nos fluxos de capital para economias emergentes em 2024–2025." },
-  { date: "Fev 2026", tag: "Quantitative", title: "Modelos de Volatilidade Implícita em Commodities Agrícolas", desc: "Estudo sobre superfície de volatilidade em opções de soja e milho, com foco em arbitragem de estrutura temporal." },
+  { date: "Fev 2026", tag: "Quantitativo", title: "Modelos de Volatilidade Implícita em Commodities Agrícolas", desc: "Estudo sobre superfície de volatilidade em opções de soja e milho, com foco em arbitragem de estrutura temporal." },
   { date: "Jan 2026", tag: "Event-Driven", title: "M&A Cross-Border em Setores Regulados: Oportunidades e Riscos", desc: "Levantamento de 48 transações em setores regulados nos últimos 5 anos e sua correlação com retornos anormais." },
-  { date: "Dez 2025", tag: "Risk", title: "Tail Risk Hedging em Carteiras Multi-Ativo", desc: "Estruturas de proteção eficientes para cenários de cauda: comparativo de abordagens com opções, volatilidade e metais." },
+  { date: "Dez 2025", tag: "Risco", title: "Tail Risk Hedging em Carteiras Multi-Ativo", desc: "Estruturas de proteção eficientes para cenários de cauda: comparativo de abordagens com opções, volatilidade e metais." },
+  // Novos — Digital Finance
+  { date: "Mar 2026", tag: "Finanças Digitais", title: "ISO 20022 e Infraestrutura de Pagamentos Institucionais", desc: "Como o novo padrão de mensageria financeira redefine liquidação, custódia e fluxos interbancários globais — implicações para investidores institucionais." },
+  { date: "Fev 2026", tag: "Finanças Digitais", title: "Blockchain Settlement e Eficiência de Pagamentos Cross-Border", desc: "Análise de eficiência em stablecoins e redes de liquidação digital versus sistemas SWIFT tradicionais para transações de alto valor." },
+  // Novos — Logistics
+  { date: "Jan 2026", tag: "Logística", title: "Influência do Diesel no Plantio Agrícola de Goiás", desc: "Correlação entre preço do diesel e custo de plantio no estado de Goiás: impacto direto na margem do produtor e nos ciclos de hedge." },
+  { date: "Dez 2025", tag: "Logística", title: "Ciclos de Energia e Fertilizantes Nitrogenados", desc: "O impacto do custo de nitrogênio sobre a oferta de grãos — um vetor macroeconômico frequentemente ignorado por gestores não-especializados." },
+  // Novos — Soberano
+  { date: "Nov 2025", tag: "Soberano", title: "Ciclos de Balanço dos Bancos Centrais e Liquidez Global", desc: "Como expansões e contrações dos balanços do Fed, BCE e PBoC sinalizam pontos de inflexão para ativos de risco e commodities." },
+  // Novos — Supply Chain
+  { date: "Out 2025", tag: "Supply Chain", title: "Frete Marítimo e Arbitragem de Commodities", desc: "A relação entre taxas de frete BDI, rotas de exportação e oportunidades de arbitragem em grãos, minério e petróleo — perspectiva quantitativa." },
 ];
 
 const tagColor: Record<string, string> = {
   Macro: "text-blue-400/70 border-blue-400/20",
-  Quantitative: "text-purple-400/70 border-purple-400/20",
+  Quantitativo: "text-purple-400/70 border-purple-400/20",
   "Event-Driven": "text-green-400/70 border-green-400/20",
-  Risk: "text-orange-400/70 border-orange-400/20",
+  Risco: "text-orange-400/70 border-orange-400/20",
+  "Finanças Digitais": "text-cyan-400/70 border-cyan-400/20",
+  Logística: "text-yellow-400/60 border-yellow-400/20",
+  Soberano: "text-rose-400/70 border-rose-400/20",
+  "Supply Chain": "text-emerald-400/60 border-emerald-400/20",
 };
 
+const allTags = ["Todos", ...Array.from(new Set(allPapers.map((p) => p.tag)))];
+
 export default function ResearchPage() {
+  const [activeTag, setActiveTag] = useState("Todos");
+  const papers = activeTag === "Todos" ? allPapers : allPapers.filter((p) => p.tag === activeTag);
+
   return (
     <main className="pt-14 min-h-screen">
       <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 border-b border-white/5 relative">
@@ -24,7 +45,7 @@ export default function ResearchPage() {
         <div className="relative z-10 max-w-3xl mx-auto text-center">
           <FadeIn>
             <p className="text-[10px] text-muted-foreground tracking-[0.3em] uppercase mb-4">Inteligência</p>
-            <h1 className="font-display text-4xl sm:text-5xl text-primary uppercase tracking-widest mb-6">Research</h1>
+            <h1 className="font-display text-4xl sm:text-5xl text-primary uppercase tracking-widest mb-6">Pesquisa</h1>
             <p className="text-muted-foreground text-sm leading-relaxed font-light">
               Publicações proprietárias de análise macroeconômica, quantitativa e estratégica. Acesso completo reservado a parceiros qualificados.
             </p>
@@ -32,19 +53,38 @@ export default function ResearchPage() {
         </div>
       </section>
 
+      {/* Tag filter */}
+      <section className="py-6 px-4 sm:px-6 lg:px-8 border-b border-white/5 bg-card/10 sticky top-14 z-30 backdrop-blur-sm">
+        <div className="max-w-4xl mx-auto flex flex-wrap gap-2">
+          {allTags.map((tag) => (
+            <button
+              key={tag}
+              onClick={() => setActiveTag(tag)}
+              className={`text-[9px] tracking-widest uppercase px-3 py-1.5 border transition-colors duration-200 font-sans ${
+                activeTag === tag
+                  ? "border-primary/50 text-primary bg-primary/5"
+                  : "border-white/8 text-muted-foreground/50 hover:text-muted-foreground hover:border-white/20"
+              }`}
+            >
+              {tag}
+            </button>
+          ))}
+        </div>
+      </section>
+
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
         <div className="max-w-4xl mx-auto space-y-4">
           {papers.map((p, i) => (
-            <FadeIn key={i} delay={i * 0.1}>
+            <FadeIn key={p.title} delay={i * 0.06}>
               <div className="group p-6 border border-white/5 bg-card hover:bg-white/[0.02] transition-colors cursor-pointer">
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-3 flex-wrap">
                     <span className={`text-[9px] tracking-widest uppercase border px-2 py-0.5 font-sans ${tagColor[p.tag] ?? "text-primary/60 border-primary/20"}`}>
                       {p.tag}
                     </span>
                     <span className="text-[10px] text-muted-foreground/50 font-sans">{p.date}</span>
                   </div>
-                  <span className="text-primary/40 group-hover:text-primary transition-colors text-xs">→</span>
+                  <span className="text-primary/40 group-hover:text-primary transition-colors text-xs shrink-0">→</span>
                 </div>
                 <h3 className="font-display text-base sm:text-lg text-foreground tracking-wide mb-2 group-hover:text-primary/90 transition-colors">
                   {p.title}

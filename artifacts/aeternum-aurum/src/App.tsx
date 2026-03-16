@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "@/components/Header";
 import CursorGlow from "@/components/CursorGlow";
+import { useLenis } from "@/hooks/useLenis";
 import Home from "@/pages/Home";
 import FrameworkPage from "@/pages/Framework";
 import AlocacoesPage from "@/pages/Alocacoes";
@@ -15,9 +16,10 @@ import NotFound from "@/pages/not-found";
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 
-export default function App() {
+function AppInner() {
+  useLenis();
   return (
-    <BrowserRouter basename={base}>
+    <>
       <CursorGlow />
       <Header />
       <Routes>
@@ -33,6 +35,14 @@ export default function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter basename={base}>
+      <AppInner />
     </BrowserRouter>
   );
 }
