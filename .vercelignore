@@ -1,0 +1,14 @@
+# Ignore unnecessary files during Vercel build
+.git
+.gitignore
+.continue
+site_backup_2026
+temp_extract
+.DS_Store
+*.log
+*.pem
+.env.*.local
+.vercel
+.cache
+README.md
+LICENSE

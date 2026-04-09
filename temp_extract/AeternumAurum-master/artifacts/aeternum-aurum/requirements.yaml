@@ -1,0 +1,10 @@
+packages:
+  "framer-motion": "For elegant scroll animations, sequential reveals, and the luxury feel"
+  "clsx": "For conditional tailwind classes"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images: []
+
+notes:
+  - Static landing page, no backend or database required.
+  - Using framer-motion for high-end staggered text and element reveals.

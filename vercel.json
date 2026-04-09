@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm build",
+  "outputDirectory": "site/dist",
+  "framework": "vite",
+  "rootDirectory": "site",
+  "nodeVersion": "20.x",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "regions": ["sfo1"],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+Improve the existing website implementation while preserving the current design, layout, typography, color palette and overall aesthetic.
+
+Do NOT redesign the site.
+
+Do NOT change the visual identity.
+
+The goal is to refine the experience, increase fluidity, add institutional visualizations, deepen the informational layers, and improve the narrative structure, while maintaining the minimal, elegant and discreet institutional style.
+
+The final result should feel like a modern institutional capital intelligence platform.
+
+The audience includes:
+
+• agricultural producers
+• commodity investors
+• business owners
+• individuals curious about advanced investment strategies
+
+Language should remain accessible and intuitive, while visuals communicate sophistication.
+
+1 — Improve mouse illumination effect
+
+The current cursor illumination effect has a visible hard gradient edge.
+
+Improve it so the light behaves more like ambient soft illumination.
+
+Requirements:
+
+• increase gradient blur radius
+• soften gradient transition significantly
+• remove visible circle edge
+• add subtle diffusion
+
+The effect should feel like soft gold light spreading over dark metal.
+
+Also add slight motion smoothing, so the light lags slightly behind the cursor.
+
+This creates a more organic motion effect.
+
+2 — Improve scrolling behavior
+
+Scrolling currently feels rigid.
+
+Implement modern smooth scrolling.
+
+Use a smooth scroll system (Lenis or equivalent).
+
+Requirements:
+
+• eased scrolling motion
+• organic inertia when scrolling
+• smooth section transitions
+• subtle parallax depth
+
+Scrolling should feel cinematic and fluid.
+
+Add slight parallax movement to:
+
+• background grid
+• geometric visuals
+• section titles
+
+Movement must remain subtle and elegant.
+
+3 — Add institutional 3D visualizations
+
+Introduce data-inspired visual structures similar to institutional quant platforms.
+
+Add visual modules inspired by:
+
+• Net GEX structures
+• Volatility surface graphs
+• layered market infrastructure diagrams
+
+Example components to add:
+
+Gamma Exposure Visualization
+
+3D stacked structure representing:
+
+Options Layer
+Dealer Hedging Layer
+Market Liquidity Layer
+Price Response Layer
+
+Use glowing gold layers on dark background.
+
+Volatility Surface Visualization
+
+Add a rotating 3D volatility surface inspired by options markets.
+
+Surface should resemble a curved 3D mesh grid with color gradient representing volatility.
+
+Use slow rotation and subtle lighting.
+
+Purpose: visually communicate options modeling and derivatives intelligence.
+
+Market Structure Diagram
+
+Create layered diagrams showing:
+
+Global Liquidity
+Dealer Gamma
+Auction Liquidity
+Price Movement
+
+These should look like floating analytical plates stacked vertically.
+
+4 — Framework page improvements
+
+Currently the framework page repeats content from the homepage.
+
+Expand it with new institutional information layers.
+
+Add a section explaining:
+
+Real-time intelligence infrastructure.
+
+Explain that agents monitor information streams including:
+
+• global television networks
+• geopolitical news
+• military developments
+• macroeconomic announcements
+• commodity supply shocks
+
+Agents operate 24/7 monitoring information flows relevant to macro markets.
+
+Visual idea:
+
+Create a global information flow visualization:
+
+Nodes representing:
+
+• financial markets
+• geopolitical regions
+• commodity supply chains
+• news flows
+
+Lines connecting nodes with subtle animated pulses.
+
+Keep text concise and visual.
+
+5 — Allocation section expansion
+
+Currently the allocation percentages are clean but lack deeper explanation.
+
+Maintain the clean allocation percentages, but add deeper sections below each allocation category.
+
+For each category create:
+
+• simple explanation
+• visual diagram
+• example strategy
+
+Keep language simple.
+
+Commodities & Real Assets (35%)
+
+Explain exposure to:
+
+• agriculture
+• energy
+• precious metals
+• global commodity indices
+
+Visual ideas:
+
+• supply chain diagrams
+• commodity flow arrows
+• agricultural cycle visual
+
+Example strategy visualization:
+
+Commodity futures hedge diagram.
+
+Global Macro (25%)
+
+Explain:
+
+• currencies
+• interest rates
+• sovereign cycles
+
+Visual ideas:
+
+• macro cycle wheel
+• currency flow diagrams
+
+Example strategy:
+
+Currency futures positioning.
+
+Volatility & Derivatives (20%)
+
+Explain:
+
+• options strategies
+• volatility trading
+• protection structures
+
+Add volatility surface visual here.
+
+Also include a simple options payoff diagram.
+
+ISO 20022 Assets (12%)
+
+Explain tokenized assets and digital financial infrastructure.
+
+Include research topics like:
+
+• institutional adoption of ISO20022
+• digital settlement systems
+• blockchain payment rails
+• stablecoin liquidity infrastructure
+
+Visual ideas:
+
+• digital financial network diagram
+• bank-to-bank settlement illustration
+
+Equities Long / Short (8%)
+
+Explain:
+
+• long/short equity positioning
+• global equity dispersion
+
+Visual ideas:
+
+• long/short balance scale
+• alpha generation diagram
+
+6 — Research section expansion
+
+Add more institutional research topics.
+
+Current research cards remain, but add more categories.
+
+Examples to add:
+
+Digital Finance
+
+ISO 20022 and Institutional Payment Infrastructure
+
+Blockchain Settlement
+
+Stablecoins and Cross-Border Payment Efficiency
+
+Commodity Logistics
+
+Diesel price influence on agricultural planting economics
+
+Energy and Fertilizer Cycles
+
+Impact of nitrogen fertilizer costs on crop supply
+
+Sovereign Liquidity
+
+Central bank balance sheet cycles
+
+Global Supply Chains
+
+Shipping and commodity arbitrage
+
+All research should appear as institutional research cards.
+
+7 — Technology section map
+
+Add a dynamic map of Goiás similar to the provided image.
+
+The map should be generated with SVG or vector shapes, not static images.
+
+Cities to highlight:
+
+• Goiânia
+• Rio Verde
+• Jataí
+• Catalão
+
+Add glowing connection lines between cities representing economic flows.
+
+Visual style:
+
+• dark background
+• gold glowing nodes
+• subtle particle motion
+
+8 — Execution section (Risk Management)
+
+Explain risk management visually.
+
+Focus on:
+
+• position sizing
+• drawdown control
+• stop loss logic
+• futures and options hedging
+
+Use visual diagrams instead of long text.
+
+Example visuals:
+
+Position sizing diagram
+
+Capital → Risk per trade → Position size.
+
+Stop loss logic visualization
+
+Show entry point, stop loss below structural support.
+
+Include:
+
+• price chart illustration
+• support level line
+• stop below support
+
+Drawdown control
+
+Simple chart showing equity curve with controlled drawdown limits.
+
+Explain visually how risk limits preserve capital.
+
+9 — Visual communication style
+
+Prefer visual explanations over long text.
+
+Use:
+
+• diagrams
+• flowcharts
+• animated structures
+• institutional charts
+
+The goal is to explain complex financial concepts visually, making them understandable to non-specialists.
+
+10 — Final experience goals
+
+The site should feel:
+
+• calm
+• intelligent
+• modern
+• institutional
+• visually rich but still minimal
+
+Visitors should feel they are interacting with:
+
+A capital intelligence infrastructure platform, not a marketing website.
+
+Maintain the existing visual identity and minimalism while adding depth, motion and institutional information layers.

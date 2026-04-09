@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Aeternum Aurum Partners"
+version = "1.0.0"
+id = "artifacts/aeternum-aurum"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 18848
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/aeternum-aurum run dev"
+
+[services.env]
+PORT = "18848"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/aeternum-aurum", "run", "build"]
+publicDir = "artifacts/aeternum-aurum/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
