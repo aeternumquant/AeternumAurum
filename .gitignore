@@ -35,3 +35,7 @@ yarn-error.log*
 out/
 .cache/
 coverage/
+
+# Local (Claude Code state + legados fora de escopo)
+.claude/
+site_backup_2026/
